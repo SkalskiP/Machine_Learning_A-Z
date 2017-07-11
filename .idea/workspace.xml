@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dbc0cf1-794a-4af8-8942-18bec9bfbc48" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Part 2 - Regression/Section 4 - Simple Linear Regression/__MACOSX/Simple_Linear_Regression/._Salary_Data.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -138,6 +137,14 @@
       <option name="presentableId" value="Default" />
       <updated>1498932525796</updated>
     </task>
+    <task id="LOCAL-00001" summary="Multiple Linear Regression with Python">
+      <created>1499601634468</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1499601634468</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -169,6 +176,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Multiple Linear Regression with Python" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multiple Linear Regression with Python" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
