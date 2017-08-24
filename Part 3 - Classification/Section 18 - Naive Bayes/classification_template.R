@@ -1,4 +1,4 @@
-# Kernel SVM
+# Classification template
 
 # Importing the dataset
 dataset = read.csv('Social_Network_Ads.csv')
@@ -20,8 +20,7 @@ training_set[-3] = scale(training_set[-3])
 test_set[-3] = scale(test_set[-3])
 
 # Fitting classifier to the Training set
-library(e1071)
-classifier = svm(formula  = Purchased ~ ., data = training_set, type = 'C-classification', kernel = 'radial')
+# Create your classifier here
 
 # Predicting the Test set results
 y_pred = predict(classifier, newdata = test_set[-3])
@@ -38,7 +37,7 @@ grid_set = expand.grid(X1, X2)
 colnames(grid_set) = c('Age', 'EstimatedSalary')
 y_grid = predict(classifier, newdata = grid_set)
 plot(set[, -3],
-     main = 'Kernel SVM (Training set)',
+     main = 'Classifier (Training set)',
      xlab = 'Age', ylab = 'Estimated Salary',
      xlim = range(X1), ylim = range(X2))
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
@@ -53,7 +52,7 @@ X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
 grid_set = expand.grid(X1, X2)
 colnames(grid_set) = c('Age', 'EstimatedSalary')
 y_grid = predict(classifier, newdata = grid_set)
-plot(set[, -3], main = 'Kernel SVM (Test set)',
+plot(set[, -3], main = 'Classifier (Test set)',
      xlab = 'Age', ylab = 'Estimated Salary',
      xlim = range(X1), ylim = range(X2))
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
